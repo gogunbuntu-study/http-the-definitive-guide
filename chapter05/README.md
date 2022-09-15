@@ -5,7 +5,8 @@
   UNIX/MacOS 는 Perl이 기본으로 설치되어 있음 (`perl -v` 명령어로 확인)
 - `perl type-o-serve.pl [PORT_NUMBER]`로 프로그램 실행 후 브라우저에서 `http://localhost:[PORT_NUMBER]/` 호출
 
-'''
+- 터미널을 통해 HTTP Request 확인
+```
  <<<Request From 'localhost'>>>
 GET /favicon.ico HTTP/1.1
 Host: localhost:8080
@@ -23,15 +24,16 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en,ko-KR;q=0.9,ko;q=0.8,en-US;q=0.7
 
  <<<Type Response Followed by '.'>>>
-'''
+```
+
 - 터미널을 통해 HTTP Reponse 작성
-'''
+```
 HTTP/1.1 200 OK
 Connection: close
 Content-type: text/plain
 
 Hi There! Welcome to Web Server Sample
 .
-'''
+```
 ![스크린샷 2022-09-15 23 58 43](https://user-images.githubusercontent.com/49651099/190437832-87c12335-b7cb-4743-8cc4-1edb86c81966.png)
 
